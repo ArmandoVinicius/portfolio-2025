@@ -18,38 +18,38 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#home"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-all duration-300 ${
           menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
         }`}
       >
-        Home
+        Inicio
       </a>
       <a
         href="#about"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-all duration-300 ${
           menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
         }`}
       >
-        About
+        Sobre
       </a>
       <a
         href="#projects"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-all duration-300 ${
           menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
         }`}
       >
-        Projects
+        Projetos
       </a>
       <a
         href="#contact"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-white my-4 hover:text-blue-500 transform transition-all duration-300 ${
           menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
         }`}
       >
-        Contact
+        Contato
       </a>
     </div>
   );
