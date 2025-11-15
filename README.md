@@ -1,6 +1,6 @@
 # Esse é o meu portfolio
 
-- [ ] Finalizar seção de projetos
+- [x] Finalizar seção de projetos
 - [ ] Finalizar seção de contato
 - [ ] Implementar lib de email
 - [ ] Deploy
