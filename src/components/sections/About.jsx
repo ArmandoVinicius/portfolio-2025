@@ -86,7 +86,7 @@ export const About = () => {
                     Estagiário em{' '}
                     <a
                       href="https://www.instagram.com/oraculos.ia"
-                      className="text-blue-500 underline hover:text-blue-600 transition-all"
+                      className="text-blue-400 underline hover:text-blue-300 transition-colors"
                       target="_blank"
                     >
                       Oraculos.IA
