@@ -2,8 +2,8 @@
 
 - [x] Finalizar seção de projetos
 - [x] Finalizar seção de contato
-- [ ] Implementar lib de email
-- [ ] Deploy
+- [X] Implementar lib de email
+- [X] Deploy
 - [ ] Implementar smooth scroll?
 - [ ] Implementar o i18n
 - [ ] Implementar o modo claro/escuro
