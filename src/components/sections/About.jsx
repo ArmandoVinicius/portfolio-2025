@@ -1,6 +1,9 @@
 import { RevealOnScroll } from '../RevealOnScroll';
+import { useTranslation } from 'react-i18next';
 
 export const About = () => {
+  const { t, i18n: {changeLanguage, language}} = useTranslation();
+  
   const frontendSkills = [
     'React',
     'Vue',
@@ -19,15 +22,12 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Sobre mim
+            {t('titleAbout')}
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur fugiat eaque dolorem nihil natus commodi excepturi
-              similique omnis quaerat non, numquam iure quos dolore nemo totam
-              incidunt tempora, nulla blanditiis!
+              {t('textAbout')}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -63,39 +63,36 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">🏫 Educação </h3>
+              <h3 className="text-xl font-bold mb-4">🏫 {t('titleEducation')} </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> Bacharelado em Ciência da Computação </strong> -
-                  Universidade Federal do Ceará (2022 - Presente)
+                  <strong> {t('titleEducationOne')} </strong> - 
+                  {' ' + t('descEducationOne')}
                 </li>
                 <li>
-                  <strong>Interesses Acadêmicos:</strong> Desenvolvimento Web,
-                  Teoria da Computação, Lógica para Computação...
+                  <strong>{t('titleEducationTwo')}</strong> {t('descEducationTwo')}
                 </li>
               </ul>
             </div>
 
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">
-                💼 Experiência de Trabalho
+                💼 {t('titleWorkExp')}
               </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    Estagiário em{' '}
+                    {t('titleWorkExpOne') + ' '}
                     <a
                       href="https://www.instagram.com/oraculos.ia"
                       className="text-blue-400 underline hover:text-blue-300 transition-colors"
                       target="_blank"
                     >
-                      Oraculos.IA
-                    </a>{' '}
-                    (2025 - Presente)
+                      Oraculos.AI
+                    </a>{' ' + t('dateWorkExpOne')}
                   </h4>
                   <p>
-                    Desenvolvi e mantive diversos microserviços relacionados a
-                    **
+                    {t('descWorkExpOne')}
                   </p>
                 </div>
 
